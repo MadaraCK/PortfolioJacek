@@ -1,0 +1,15 @@
+.button-style{
+    align-items: center;
+    width: 100%;
+    border: none;
+    background-color: white;
+margin: 15px;    
+}
+@media screen and (max-width:780px) {
+    .category{
+        margin-top: 130px;
+    }
+    .button-style{
+        margin-left: 1px;
+    }
+}
