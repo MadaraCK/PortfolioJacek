@@ -1,8 +1,4 @@
-.app{
+.container{
     max-width: 1380px;
-    margin: 0 auto;
-}
-.app{
-    max-width: 1360px;
     margin: 0 auto;
 }

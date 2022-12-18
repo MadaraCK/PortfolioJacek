@@ -50,7 +50,7 @@ function Category() {
       </section>
       <div className="movies-box">
         {movie.map((elem) => {
-          const { id, category, iframes } = elem;
+          const { iframes } = elem;
           return <div className="movies-f">{iframes}</div>;
         })}
       </div>

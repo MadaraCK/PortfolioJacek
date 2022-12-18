@@ -10,7 +10,7 @@ function Navigation() {
     <nav className="navbar">
       <h3 className="logo">logo</h3>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
-        <Link className="home" to="/films">
+        <Link className="home" to="/">
           <li>Films</li>
         </Link>
         <Link className="contact" to="/contact">

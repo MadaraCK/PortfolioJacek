@@ -1,21 +1,23 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation/Navigation";
 import Category from "./Category/Category";
 import Contact from "./Contact/Contact";
-// import Films from "./Films/Films";
+import Footer from "./Footer/Footer";
+import "./App.css";
 function App() {
   return (
-    <div className="app">
-      <Router>
+    <>
+      <div className="container">
         <Navigation />
-        <Category />
+
         <Routes>
-          {/* <Route path="/films" element={<Films />} exact></Route> */}
-          <Route path="/contact" element={<Contact />} exact></Route>
+          <Route path="/" element={<Category />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
-      </Router>
-    </div>
+      </div>
+
+      <Footer />
+    </>
   );
 }
 export default App;
