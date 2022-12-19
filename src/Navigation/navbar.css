@@ -3,8 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo-box{
+text-transform: uppercase;
+display: flex;
+flex-wrap: wrap;
+max-width: 300px;
+}
 .logo{
     font-size: 30px;
+    font-family: 'Rubik 80s Fade', cursive;
+}
+
+.under-logo{
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 13px;
 }
 .navbar{
     display: flex;
@@ -17,6 +29,9 @@
     justify-content: flex-end;
     list-style: none;
     width: 75%;
+}
+li{
+    font-family: 'Montserrat', sans-serif; 
 }
 .home,
 .contact{
@@ -31,11 +46,14 @@
     display: none;
 }
 @media screen and (max-width:780px) {
+    .logo-box{
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+        }
     .logo{
         display: flex;
-        position: absolute;
-        top: 15px;
-        left: 35px;
     }
     .nav-links{
         display: none;

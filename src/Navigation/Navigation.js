@@ -8,7 +8,12 @@ function Navigation() {
   const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="navbar">
-      <h3 className="logo">logo</h3>
+      <div className="logo-box">
+        <p className="logo">
+          Jacek <b>Gołda</b>
+        </p>
+        <p className="under-logo">Filmmaker, dop, colorist, 3D artist</p>
+      </div>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
         <Link className="home" to="/">
           <li>Films</li>

@@ -12,6 +12,7 @@
     background-color: white;
     cursor: pointer;  
     margin: 25px; 
+    font-family: 'Montserrat', sans-serif;
 }
 .movie-box{
     display: flex;
@@ -23,9 +24,9 @@
     
 }
 .iframe-work{
-    position: relative;
-  width: 50%;
-  margin: 10px;
+    position: relative ;
+    width: 50%;
+    margin: 10px;
 }
 @media screen and (max-width:780px) {
     .category{

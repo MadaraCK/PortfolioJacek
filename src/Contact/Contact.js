@@ -24,7 +24,7 @@ function Contact() {
           <p className="phone-number">879 456 789</p>
         </div>
       </div>
-      <form action="https://formsubmit.co/radek_mikolaj@o2.pl" method="POST">
+      <form action="https://formsubmit.co/filmgolda@gmail.com" method="POST">
         <label for="mail">Twój e-mail*</label>
         <input
           type="mail"
