@@ -10,7 +10,7 @@ function Navigation() {
     <nav className="navbar">
       <div className="logo-box">
         <p className="logo">
-          Jacek <b>Gołda</b>
+          Jacek <b>Gołdax</b>
         </p>
         <p className="under-logo">Filmmaker, dop, colorist, 3D artist</p>
       </div>
