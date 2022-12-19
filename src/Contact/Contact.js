@@ -1,5 +1,34 @@
 import "./contact.css";
+import React, { useState } from "react";
+import axios from "axios";
+
 function Contact() {
+  const [formState, setFormState] = useState({
+    from: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    setFormState({
+      ...formState,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    axios
+      .post("jacekportfolio.com/send-email", { ...formState })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <section className="conatiner-contact">
       <div className="first-box">
@@ -24,24 +53,40 @@ function Contact() {
           <p className="phone-number">879 456 789</p>
         </div>
       </div>
-      <form action="https://formsubmit.co/filmgolda@gmail.com" method="POST">
-        <label for="mail">Twój e-mail*</label>
-        <input
-          type="mail"
-          id="mail"
-          name="mail"
-          placeholder="Wpisz swój adres"
-        />
-        <label for="msg">Twoja wiadomość*</label>
-        <textarea
-          name="msg"
-          id="msg"
-          rows="5"
-          placeholder="Wpisz Wiadomość"
-        ></textarea>
-        <input type="submit" value="Wyślij" />
+      <form onSubmit={handleSubmit}>
+        <label>
+          Email nadawcy:
+          <input
+            type="email"
+            name="from"
+            value={formState.from}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Email odbiorcy:
+          <input
+            type="email"
+            name="email"
+            value={formState.email}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Wiadomość:
+          <textarea
+            name="message"
+            value={formState.message}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <button type="submit">Wyślij</button>
       </form>
     </section>
   );
 }
+
 export default Contact;
