@@ -1,0 +1,16 @@
+.fakeimg{
+    width: 700px;
+    height: 400px;
+    background: green;
+}
+.first-box{
+    display: flex;
+    gap: 20px;
+}
+.main-text-work{
+    font-size: 40px;
+    margin: 20px 0;
+}
+.send-me{
+    margin: 20px 0;
+}

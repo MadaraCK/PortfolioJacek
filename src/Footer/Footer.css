@@ -1,5 +1,11 @@
-.top-footer{ 
-    height: 30vh;
-    margin-top: 10%;
-    background-color: lightgrey;
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+footer{
+    background-color: beige;
 }
