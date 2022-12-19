@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 const express = require("express");
 const app = express();
 dotenv.config();
@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/send-email", (req, res) => {
+app.post("https://jacekportfolio55689.netlify.app/contact", (req, res) => {
   const { from, email, message } = req.body;
 
   const mailOptions = {
