@@ -20,7 +20,9 @@ function Contact() {
     event.preventDefault();
 
     axios
-      .post("https://jacek-portfolio.netlify.app/send-email", { ...formState })
+      .post("https://jacekportfolio55689.netlify.app/send-email", {
+        ...formState,
+      })
       .then((response) => {
         console.log(response);
       })
