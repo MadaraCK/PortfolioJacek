@@ -59,7 +59,9 @@ li{
         display: none;
     }
     .nav-links-mobile{
+        background-color: white;
         position: absolute;
+        z-index: 2;
         display: block;
         list-style: none;
         left: 0;
@@ -75,8 +77,10 @@ li{
         transition: all 0.5 ease;
     }
     .mobile-menu-icon{
-        display: block;
+        background-color: transparent;
+        display: flex;
         position: absolute;
+        z-index: 15;
         font-size: 30px;
         border: none;
         outline: none;

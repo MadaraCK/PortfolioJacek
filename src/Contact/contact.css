@@ -1,7 +1,22 @@
-.fakeimg{
+a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+span{
+    display: flex;
+}
+.foto{
+    display: flex;
+    background-image: url('../img/foto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
     width: 700px;
     height: 400px;
-    background: green;
+    position: relative;
+    z-index: 1;
 }
 .conatiner-contact{
     font-family: "Varta", Sans-serif;
@@ -9,11 +24,14 @@
 
 }
 .first-box{
-  display: flex;
+    margin-left: -10px;
+    margin-top: 40px;
+    display: flex;
     gap: 20px;
 }
 .work-toge{
     margin: 15px;
+    position: relative;
 }
 .about-me{
     line-height: 1.8em;
@@ -38,5 +56,21 @@ input{
     .first-box{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:740px){
+    .foto{
+width: 500px;
+    }
+}
+@media screen and (max-width:540px){
+    .foto{
+width: 400px;
+    }
+}
+@media screen and (max-width:430px){
+    .foto{
+        left: 15px;
+width: 300px;
     }
 }

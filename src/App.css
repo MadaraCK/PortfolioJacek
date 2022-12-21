@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik+80s+Fade&family=Rubik+Vinyl&family=Varta:wght@300;400&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik+80s+Fade&family=Rubik+Vinyl&family=Varta:wght@300;400&display=swap');
+*{
     margin: 0;
     padding: 0;
 }
-html,body{
+html{
     height: 100%;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+    box-sizing: inherit;
+}
+body{
+    position: relative;
+    min-height: 89%;
+    margin: 0;
+    padding-bottom: 6.74rem;
 }
 .container{
     max-width: 1380px;
     margin: 0 auto;
-    overflow: auto;
-    padding-bottom: 100px;
-    flex-grow: 1;
+    padding-bottom: 400px;
 }
 
-.container-all{
-    min-height: 100%;
-}
+

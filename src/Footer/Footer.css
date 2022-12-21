@@ -1,11 +1,52 @@
 *{
     margin: 0;
 }
+li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+span{
+    margin-bottom: 5px;
+}
 body{
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
-footer{
-    background-color: beige;
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #333;
+}
+.columns{
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+.text-foot,
+.social-space{
+    color: rgba(255,255,255,.7);
+}
+
+.socialMedia,
+.contactFooter,
+.siteMap{
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.test{
+    margin-bottom: 10px;
+}
+.rights{
+    font-size:12px;
+}
+@media screen and (max-width:440px) {
+    .columns{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
