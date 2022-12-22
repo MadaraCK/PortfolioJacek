@@ -14,18 +14,17 @@
     margin: 25px; 
     font-family: 'Montserrat', sans-serif;
 }
-.movie-box{
+.movies-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .movies-f{
     display: flex;
     justify-content: center;
-    
 }
 .iframe-work{
-    position: relative ;
-    width: 50%;
+    width: 600px;
     margin: 10px;
 }
 @media screen and (max-width:780px) {
