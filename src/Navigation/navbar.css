@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 .logo-box{
-text-transform: uppercase;
 display: flex;
 flex-wrap: wrap;
 max-width: 300px;
 }
 .logo{
     font-size: 30px;
-    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .under-logo{
-    font-family: 'Rubik Vinyl', cursive;
-    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 10px;
 }
 .navbar{
     display: flex;
@@ -35,6 +35,7 @@ li{
 }
 .home,
 .contact{
+    font-weight: 500;
     text-decoration: none;
     font-size: 20px;
     padding: 10px 20px;
@@ -45,9 +46,18 @@ li{
 .mobile-menu-icon{
     display: none;
 }
+.social-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 5px;
+}
+.social-nav-hover:hover{
+    color: #6ec1e4;
+}
 @media screen and (max-width:780px) {
     .logo-box{
-        text-transform: uppercase;
         display: flex;
         flex-wrap: wrap;
         margin-left: 15px;
@@ -69,6 +79,7 @@ li{
         transition: all 0.5 ease-out;
         width: 100%;
     }
+  
     .home,
     .contact{
         text-align: center;

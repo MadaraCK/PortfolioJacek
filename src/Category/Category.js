@@ -1,6 +1,7 @@
 import "./category.css";
 import Movies from "../Films/Films";
 import { useState } from "react";
+import { motion } from "framer-motion";
 function Category() {
   const [movie, setFilms] = useState(Movies);
   const filterItem = (categItem) => {
@@ -48,12 +49,12 @@ function Category() {
           </button>
         </div>
       </section>
-      <div className="movies-box">
+      <motion.div className="movies-box">
         {movie.map((elem) => {
           const { iframes } = elem;
           return <div className="movies-f">{iframes}</div>;
         })}
-      </div>
+      </motion.div>
     </>
   );
 }
