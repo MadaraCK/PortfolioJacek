@@ -19,6 +19,17 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.main-foto{
+    display: flex;
+    justify-content: center;
+}
+.main-foto-beta{
+    background-image: url('../img/mainportbeta.png');
+    background-position: center;
+    background-size: contain;
+    width: 1300px;
+    height: 400px;
+}
 .movies-f{
     display: flex;
     justify-content: center;
