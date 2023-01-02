@@ -15,10 +15,7 @@ function Navigation() {
     <nav className="navbar">
       <div className="logo-box">
         <Link to="/">
-          <p className="logo">
-            Jacek <b>Gołda</b>
-          </p>
-          <p className="under-logo">Filmmaker, dop, colorist, 3D artist</p>
+          <div className="logo_nav" />
         </Link>
       </div>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>

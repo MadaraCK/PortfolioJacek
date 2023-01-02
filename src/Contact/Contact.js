@@ -11,12 +11,12 @@ function Contact() {
           <div className="work-toge">
             <h1 className="main-text-work">Let's work together!</h1>
             <p className="about-me">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              voluptatibus alias ea dolorum itaque est aliquam id fuga rerum aut
-              sit neque cupiditate fugit voluptates voluptas harum aliquid
-              commodi, numquam dolor nemo enim velit reiciendis? At voluptas,
-              eos consectetur enim laboriosam dolorem odio, veritatis iste error
-              corrupti nemo vero deserunt.
+              Hi, my name is Jacek I am a filmmaker living in Kielce I have been
+              creating films for 14 years and specialize mainly in music videos,
+              commercials, animations but also feel good in corporate
+              productions and documentaries. For a long time I have been helping
+              people and companies to create their image using the language of
+              film. Contact me and I may be able to help you too.
             </p>
             <p className="send-me">
               Send me a message and find out how I can help you or your

@@ -3,16 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-.logo-box{
-display: flex;
-flex-wrap: wrap;
-max-width: 300px;
-}
+
 .logo{
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
-
+.logo_nav{
+    background-image: url('../img/napislogo_00000.png');
+    width: 230px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+}
 .under-logo{
     text-transform: uppercase;
     font-family: 'Roboto';
@@ -60,7 +62,7 @@ li{
     .logo-box{
         display: flex;
         flex-wrap: wrap;
-        margin-left: 15px;
+        margin-top: -10px;
         }
     .logo{
         display: flex;
