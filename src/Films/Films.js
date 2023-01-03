@@ -2,7 +2,11 @@ const Movies = [
   {
     category: "All",
     img: (
-      <a href="https://www.youtube.com/watch?v=E_wNW3RE67Y" target="_blank">
+      <a
+        href="https://www.youtube.com/watch?v=E_wNW3RE67Y"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className="main-foto-beta" />
       </a>
     ),

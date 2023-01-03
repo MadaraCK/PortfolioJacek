@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 function Category() {
   const [movie, setFilms] = useState(Movies);
-  const [remove, setRemove] = useState(true);
 
   const filterItem = (categItem) => {
     const updatedItems = Movies.filter((curEl) => {
