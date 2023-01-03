@@ -23,11 +23,13 @@
     display: flex;
     justify-content: center;
 }
+.foto-beta{
+    display: flex;
+    justify-content: center;
+
+}
 .main-foto-beta{
-    background-image: url('../img/mainportbeta.png');
-    background-position: center;
-    background-size: contain;
-    width: 1300px;
+    width: 1220px;
     height: 400px;
 }
 .movies-f{
@@ -38,7 +40,17 @@
     width: 600px;
     margin: 10px;
 }
+@media screen and (max-width:1260px) {
+    .main-foto-beta{
+        width: 600px;
+        height: 250px;
+    }
+}
 @media screen and (max-width:780px) {
+    .main-foto-beta{
+        width: 680px;
+        height: 250px;
+    }
     .category{
         margin-top: 140px;
     }
@@ -48,5 +60,11 @@
     .iframe-work{
         width: 80%;
         margin: 20px 40px;
+    }
+}
+@media screen and (max-width:770px) {
+    .main-foto-beta{
+        width: 290px;
+        height: 150px;
     }
 }
