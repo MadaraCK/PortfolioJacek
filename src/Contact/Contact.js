@@ -11,16 +11,12 @@ function Contact() {
           <div className="work-toge">
             <h1 className="main-text-work">Let's work together!</h1>
             <p className="about-me">
-              Hi, my name is Jacek I am a filmmaker living in Kielce I have been
-              creating films for 14 years and specialize mainly in music videos,
-              commercials, animations but also feel good in corporate
+              Hi, my name is Jacek. I am a filmmaker living in Kielce. I have
+              been creating films for 14 years and specialize mainly in music
+              videos, commercials, animations but also feel good in corporate
               productions and documentaries. For a long time I have been helping
               people and companies to create their image using the language of
               film. Contact me and I may be able to help you too.
-            </p>
-            <p className="send-me">
-              Send me a message and find out how I can help you or your
-              business!
             </p>
             <a href="mailto:filmgolda@gmail.com" className="email">
               <span>
