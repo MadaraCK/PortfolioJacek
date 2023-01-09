@@ -9,7 +9,6 @@ function Contact() {
             <div className="foto"></div>
           </div>
           <div className="work-toge">
-            <h1 className="main-text-work">Let's work together!</h1>
             <p className="about-me">
               Hi, my name is Jacek. I am a filmmaker living in Kielce. I have
               been creating films for 14 years and specialize mainly in music
