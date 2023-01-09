@@ -4,7 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 function Category() {
   const [movie, setFilms] = useState(Movies);
+  const [visible, setVisible] = useState(7);
 
+  const showMore = () => {
+    setVisible((prevValue) => prevValue + 7);
+  };
   const filterItem = (categItem) => {
     const updatedItems = Movies.filter((curEl) => {
       return curEl.category === categItem;
@@ -58,11 +62,15 @@ function Category() {
       })}
 
       <motion.div className="movies-box">
-        {movie.map((elem) => {
-          const { iframes } = elem;
-          return <div className="movies-f">{iframes}</div>;
-        })}
+        {movie.slice(0, visible).map((elem) => (
+          <div className="movies-f">{elem.iframes}</div>
+        ))}
       </motion.div>
+      <div className="load">
+        <button onClick={showMore} className="load-more">
+          Load more
+        </button>
+      </div>
     </>
   );
 }
