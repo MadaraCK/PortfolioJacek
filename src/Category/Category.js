@@ -1,7 +1,6 @@
 import "./category.css";
 import Movies from "../Films/Films";
 import { useState } from "react";
-import { motion } from "framer-motion";
 function Category() {
   const [movie, setFilms] = useState(Movies);
   const [visible, setVisible] = useState(7);
@@ -61,11 +60,11 @@ function Category() {
         }
       })}
 
-      <motion.div className="movies-box">
+      <div className="movies-box">
         {movie.slice(0, visible).map((elem) => (
           <div className="movies-f">{elem.iframes}</div>
         ))}
-      </motion.div>
+      </div>
       <div className="load">
         <button onClick={showMore} className="load-more">
           Load more

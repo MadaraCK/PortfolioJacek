@@ -13,22 +13,6 @@ const Movies = [
   },
 
   {
-    id: 1,
-    iframes: (
-      <iframe
-        className="iframe-work"
-        height="315"
-        src="https://www.youtube.com/embed/zlecq0ndhqU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    ),
-    category: "Commercial",
-  },
-  {
     id: 2,
     iframes: (
       <iframe
@@ -86,6 +70,22 @@ const Movies = [
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    ),
+    category: "Commercial",
+  },
+  {
+    id: 1,
+    iframes: (
+      <iframe
+        className="iframe-work"
+        height="315"
+        src="https://www.youtube.com/embed/zlecq0ndhqU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         loading="lazy"
       ></iframe>
