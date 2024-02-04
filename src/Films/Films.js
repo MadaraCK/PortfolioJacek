@@ -3,12 +3,12 @@ const Movies = [
     category: "All",
     img: (
       <a
-        href="https://www.youtube.com/watch?v=E_wNW3RE67Y"
+        href="https://www.youtube.com/watch?v=DZPdZ6SC7O8&ab_channel=SHALVIA_CREATIVE"
         target="_blank"
         rel="noreferrer"
       >
         <div className="main-foto-beta" />
-      </a>
+      </a>            
     ),
   },
 
@@ -42,6 +42,51 @@ const Movies = [
       ></iframe>
     ),
     category: "Commercial",
+  },
+  {
+    id: 112,
+    iframes: (
+      <iframe
+        className="iframe-work"
+        height="315"
+        src="https://www.youtube.com/embed/lkqLIpTNK-c?si=g7U5UcvnfjPOHdll"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
+    category: "Music videos",
+  },
+  {
+    id: 112,
+    iframes: (
+      <iframe
+        className="iframe-work"
+        height="315"
+        src="https://www.youtube.com/embed/x599m8SF3oY?si=VbOp2UWQKsfZtcOn"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
+    category: "Commercial",
+  },
+  {
+    id: 112,
+    iframes: (
+      <iframe
+        className="iframe-work"
+        height="315"
+        src="https://www.youtube.com/embed/HbruIoFJTzI?si=x32HsKVJ_4PDLpFh"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
+    category: "Corporate",
   },
   {
     id: 112,
